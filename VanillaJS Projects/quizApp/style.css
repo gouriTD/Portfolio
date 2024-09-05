@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+/*
+* Here we will create a Netflix based background.
+*/
+:root{
+    --shade-one: #8e0e00;
+    --shade-two: #1f1c18;
+    
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--shade-one);
+    background-image: linear-gradient(315deg,var(--shade-two)0%, var(--shade-one)100%);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    margin: 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 50%;
+}
+
+.menu-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    transition: 0.3s linear;
+}
+
+.menu-container.hide{
+    display: none;
+}
+
+.menuBtn.hide{
+    display: none;
+}
+.panel{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.panel#one{
+    width: 0px;
+    background-color: #e52114;
+    transition: width 0.3s linear;
+    /* z-index: 5; */
+}
+
+.panel#two{
+    width: 0px;
+    background-color: var(--shade-two);
+    transition: width 0.3s linear;
+    /* z-index: 10; */
+    
+}
+
+.panel#three{
+    width: 0px;
+    background-color: white;
+    transition: width 0.3s linear;
+    /* z-index: 10; */
+    
+}
+
+.panel#three ul{
+    padding: 20px;
+    list-style-type: none;
+}
+
+.panel#three ul.hide{
+    visibility: hidden;
+}
+
+.panel#three ul li{
+   margin: 10px 0;
+}
+
+.panel#three ul li a{
+    text-decoration: none;
+}
+
+.panel#three ul li small{
+    text-align: center;
+    color: grey;
+}
+
+.menuBtn{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#close{
+   position: absolute;
+   top:10px;
+   right: 10px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.quiz-card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    background-color: white;
+    overflow: hidden;
+}
+
+.quiz-container{
+    padding: 20px 30px;
+}
+
+.quiz-card #title{
+    margin: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.quiz-card ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+label{
+    cursor: pointer;
+}
+
+
+li .answer{
+    margin: 0 20px 10px 0;
+    cursor: pointer;
+    
+}
+.btn{
+    border: 0;
+    background-color: #e52114;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

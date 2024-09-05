@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtWork3</title>
+    <style>
+        /* 
+        Gap Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E
+        lightGrey
+
+        IMP: We can't change the properties of grid lines.
+        But grid lines are transparent!
+        height: 910px, width: 810px, 
+        container has 7 rows and 7 columns.
+        */
+        body{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            
+            display: grid;
+            grid-template-columns: 100px 100px 100px 200px 100px 100px 50px;
+            grid-template-rows: 100px 200px 200px 100px 100px 100px 50px;
+            gap: 10px;
+            background-color: black;
+            height: 910px;
+            width: 810px;
+        }
+        .item {
+            background-color: #F0F1EC;
+        }
+        .box1 {
+            background-color: lightgrey;
+            grid-column: span 2;
+        }
+        .box2{
+            grid-column: span 2;
+        }
+        .box3{
+            grid-column: span 2;
+            background-color: #F9D01E;
+        }
+        .box4 {
+            grid-row: span 4;
+        }
+        .box6 {
+            grid-area: 2/2/4/5;
+            background-color: #E72F24;
+        }
+        .box7 {
+            grid-column: span 2;
+            background-color: #F9D01E;
+        }
+        .box8{
+            grid-area: 3/1/5/2;
+            background-color: lightgrey;
+        }
+        .box11{
+            grid-area: 4/2/6/4;
+            background-color: #232629;
+        }
+        .box12{
+            background-color: lightgray;
+        }
+        .box13{
+            grid-area: 4/5/5/7;
+        }
+        .box14{
+            grid-row: span 3;
+            background-color: #F9D01E;
+        }
+        .box15{
+            background-color: lightgray;
+        }
+        .box16{
+            grid-area: 5/5/7/7;
+            background-color: #004592;
+        }
+        .box17{
+            grid-row: span 3;
+            background-color: #E72F24;
+        }
+        .box18{
+            grid-area: 6/2/8/4;
+        }
+        .box19{
+            background-color: #232629;
+        }
+        .box20{
+            grid-column: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item box1"></div>
+        <div class="item box2"></div>
+        <div class="item box3"></div>
+        <div class="item box4"></div>
+        <div class="item box5"></div>
+        <div class="item box6"></div>
+        <div class="item box7"></div>
+        <div class="item box8"></div>
+        <div class="item box9"></div>
+        <div class="item box10"></div>
+        <div class="item box11"></div>
+        <div class="item box12"></div>
+        <div class="item box13"></div>
+        <div class="item box14"></div>
+        <div class="item box15"></div>
+        <div class="item box16"></div>
+        <div class="item box17"></div>
+        <div class="item box18"></div>
+        <div class="item box19"></div>
+        <div class="item box20"></div>
+    </div>
+</body>
+</html>

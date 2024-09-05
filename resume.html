@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Resume</title>
+        <style>
+            body{
+                margin:0;
+                background-color: aliceblue;
+                /* background-image: url(./assets/images/yellow-bg.jpeg); */
+            }
+            #container{
+                position: relative;
+                margin: 0px;
+                padding: 0px;
+            }
+            #horizontal-ribbon{
+                width: 100%;
+                height: 200px;
+                position: absolute;
+                top: 50px;
+                background-color: #E9C3AF;
+                border-top: 5px solid white;
+                border-bottom: 5px solid white;
+            }
+            #vertical-ribbon{
+                width: 200px;
+                height: 1400px;
+                position: absolute;
+                background-color:#1C409E;
+                left: 50px;
+                border-left: 5px solid white;
+                border-right: 5px solid white;
+                
+            }
+            #profile-info{
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                top: 75px;
+                left: 20px;
+                border-radius: 50%;
+                background-color: aliceblue;
+                border: 5px solid white
+            }
+            img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-bottom: 24px;
+            }
+            *{
+                color: #3D3C3A;
+            }
+            #name{
+                position: absolute;
+                left: 300px;
+                top: 50px;
+            }
+            h3{
+                font-size: 2em;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .ribbon-text{color: #E9C3AF;}
+            .ribbon-text li,
+            .ribbon-text h4,
+            .ribbon-text li p{color: seashell; font-size: 0.9rem;}
+
+            .ribbon-text h4{
+                margin: 0;
+            }
+    
+            #profile-body{
+                position: absolute;
+                top: 270px;
+                left: 250px;
+                width: 50rem;
+                height: 100vh;
+            }
+            #profile-body>ul{
+                margin-left: 10px;
+                list-style-type: disc;
+            }
+            .profile-body-items{
+                font-weight: bold; 
+            }
+            #award{
+                color: purple;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="horizontal-ribbon">
+                <div id="name">
+                    <h3>Gouri Tripathi</h3>
+                    <h4>Software Developer - Tech Lead </h4>
+                </div>
+            </div>
+            <div id="vertical-ribbon">
+                <div id="profile-info">
+                <img src="./assets/images/profile.jpeg" alt="profile-pic">
+                <div id="contact" >
+                    <h4 class="ribbon-text">Contact:</h4>
+                    <hr>
+                    <ul class="ribbon-text contact">
+                        <li>email id: gouri30@gmail.com</li>
+                        <br>
+                        <li>ph.no: +91-9741784963</li>
+                        <br>
+                        <li>Address: 104, BlockA, SLV Green City, Thirumenahalli,
+                            Thannisandra.
+                        </li>
+                        <br>
+                    </ul>
+                    <h4 class="ribbon-text">Skill Set:</h4>
+                    <hr>
+                    <ul class="ribbon-text" style="list-style-type:disc; margin: 8px;">
+                        <li>
+                            <h4>Programming Languages: </h4>
+                            <p> Javascript, HTML, CSS, Objective-C, Core java.</p>
+                        </li>
+                        <li>
+                            <h4>Framework/Libraries: </h4>
+                            <p>ReactJS, React-native, NodeJS, ExpressJS, Redux, RESTful Webservices</p>
+                            
+                        </li>
+                        <li>
+                            <h4>Mobile Platforms:</h4>
+                            <p>IOS and Android</p>
+                        </li>
+                        
+                        <li>
+                            <h4>Tools: </h4>
+                            <p>Git, Visual Studio Code, GitHub, Jira, Postman, Xcode, Android Studio</p>
+                        </li>
+                        <li>
+                            <h4>Database:</h4>
+                            <p>MongoDB, PostgreSQL</p>
+                        </li>
+                        <li>
+                            <h4>Product Development:</h4>
+                            <p>Scrum</p>
+                        </li>
+                        <br>
+                    </ul>
+                    <h4 class="ribbon-text">Education:</h4>
+                    <hr>
+                    <ul class="ribbon-text" style="list-style-type:disc; margin: 8px;">
+                        <li>MS in Software Systems, BITS Pilani</li>
+                        <br>
+                        <li>BE EEE, MSRIT, Bangalore</li>
+                        <br>
+                       
+                    </ul>
+                </div>
+            </div>
+            <div id="profile-body">
+                <h4>Summary Statement</h4>
+                <hr>
+                <p>I am a Software Developer with over 11 years of experience in mobile technology. Specialising in ReactJS, React Native, NodeJS and JavaScript for iOS and Android platform. I have an exposure to working on native ios , android and symbian c++ platform. </p>
+                <p>Seeking roles in ReactJS, frontend web development and full-stack development, with a strong interest in Scrum Master responsibilities and agile team leadership.</p>
+                <p>I have an eye for perfection and likes to upgrade and update myself to changing technology developments.</p>
+                <br>
+                <h4>Work History</h4>
+                <hr>
+                <ul>
+                    <li> <span class="profile-body-items">Jan 2022 - Present :</span> Had relocated from Kolkata to Bangalore, parenting / care-giving, and upskilling myselves in web technologies (both frontend and backend) </li>
+                    <br>
+                    <li> <span class="profile-body-items">Nov 2021-Dec 2022 : as  Tech lead at Byjus</span> for their TLPay app on React-native and Node.js on both ios and android platform.<a href="https://play.google.com/store/apps/details?id=com.tlpay&hl=en&gl=US&pli=1"> See for ref : TLpay</a></li>
+                    <br>
+                    <li><span class="profile-body-items">Aug 2015-Oct 2021 :</span> Home-stay mother</li>
+                    <br>
+                    <li><span class="profile-body-items">Jun 2013-July 2015 as  Tech Lead at Infosys,</span> taking care of T-Mobile Hotspot project on ios and objective C</li>
+                    <br>
+                    <li><span class="profile-body-items">Jun 2008-May 2013 : as  Rnd software engineer at Nokia,</span> associated with the symbian sys doc team and writing multiple examples to be accompained with symbian SDK. Then became part of IDM team and was involved in maintainenece and feature development of the IDM middleware.</li>
+                    <br>
+                    <li><span class="profile-body-items">July 2005-June 2008 : as  Software engineer at Sasken Technologies,</span> Part of different projects on symbian and c++, also sent as onsite engineer at Nokia India for projects on build and integration of multimedia phones.</li>
+
+                </ul>
+                <br>
+                <h4>Certification</h4>
+                <hr>
+                <ul>
+                    <li>Certified ScrumMaster (CSM), Scrum Alliance, Credential ID : 001636579</li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-e9839496-cbd5-4901-bcff-f094e81c70ca.jpg"> The Complete 2024 Web Development Bootcamp </a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-8780cbe4-8f21-4523-ae1b-a06edd9dddb9.jpg"> Vanilla Javascript</a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-68cbee4d-e9cd-4b91-a1a5-b3b76320a490.jpg"> React - The Complete Guide 2024 </a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-852b1de2-6e9c-4255-bc95-6575fac7cb05.jpg"> Flutter and Dart </a></li>
+                    <li><a href="https://udemy-certificate.s3.amazonaws.com/image/UC-148dddd2-7ff9-4b90-91ec-8df5a2ed5a41.jpg"> Android </a></li>
+                </ul>
+                <br>
+                <h4>Rewards and Recognition</h4>
+                <hr>
+                <ul>
+                    <li>Awarded <span id="award">Inspire Award</span> in Infosys for on time delivery of features, resolutions of bugs and motivating team for achieving desired results for T-Mobile project</li>
+                </ul>
+            </div>
+               
+
+            </div>
+        </div>
+        
+    </body>
+</html>

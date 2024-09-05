@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+body{
+    background-color: wheat;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.rating-card{
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+
+.rating-container{
+    display: flex;
+    margin: 40px 0px;
+    justify-content: space-around;
+}
+.fa-star{
+    color: rgba(0,0,0,0.4);
+    font-size: 2rem;
+}
+
+.rating.selected .fa-star{
+    color: orange;
+}
+
+.submit{
+    margin-top: 50px;
+    padding: 10px 50px;
+    background-color: black;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.submit:active{
+    transform: scale(0.95);
+}

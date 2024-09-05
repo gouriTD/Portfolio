@@ -1,0 +1,117 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h3{
+    margin: 0;
+    font-size: 1.6rem;
+}
+p{
+    margin:10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.faq{
+    border: 1px solid #999;
+    margin: 10px 0;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1) , 1px 1px 2px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: start;
+    transition: 0.3s linear;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.faq i.fa-xmark{
+    display: none;
+}
+
+.faq.active i.fa-xmark{
+    display: block;
+}
+
+.faq.active i.fa-chevron-down{
+    display: none;
+}
+
+.faq.active::before,  .faq.active::after{
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 10rem;
+    opacity: 0.3;
+    position: absolute;
+    color: lightgreen;
+    top: 20px;
+    left: 20px
+}
+
+.faq.active::before{
+    color: lightskyblue;
+    top: -20px;
+    left: -20px;
+    transform: rotateY(180deg);
+    
+}
+
+.faq .faq-ans{
+    display: none;
+}
+
+.faq button{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border:0;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+.faq button:active{
+    transform: scale(0.95);
+}
+
+.faq.active{
+    background-color: white;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.1) , 2px 3px 5px rgba(0,0,0,0.1);
+}
+
+.faq.active button{
+   background-color: #999;
+   color: white;
+}
+
+.faq.active .faq-ans{
+    display: block;
+}
+
+.faq.active .selection{
+    display: block;
+}
+
+.faq .selection{
+    display: none;
+}
+

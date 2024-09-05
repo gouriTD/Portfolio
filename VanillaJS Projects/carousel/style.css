@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: lightgreen; */
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto','sans-serif';
+}
+
+.carousel{
+    width: 500px;
+    height: 530px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.image-container{
+    width: calc(500px * 4);
+    height: 530px;
+    overflow: hidden;
+    display: inline-flex;
+    transition: transform 0.5s ease-in;
+}
+
+.image{
+    width: 500px;
+    height: 500px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.one{
+    background-image: url('./images/autumn.jpeg');
+}
+.two{
+    background-image: url('./images/balloons.jpeg');
+}
+.three{
+    background-image: url('./images/flowers.jpeg');
+}
+.four{
+    background-image: url('./images/mountain.jpeg');
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    padding: 10px;
+    width: 49.5%;
+    border: 0;
+    outline: 0;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+h2{
+    margin: 0;
+}
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /*Giving this width and height is necessary otherwise the entire number set would be hidden.*/
+    width: 100px;
+    height: 3rem;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+.numbers div{
+    margin: 0;
+    position:absolute;
+    top: 0;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rebeccapurple;
+    transform:rotate(120deg);
+    transform-origin: bottom center;
+    /* animation: AnimIn 0.5s linear; */
+} 
+
+div.in{
+    transform: rotate(0deg);
+    animation: AnimIn 0.5s linear;
+}
+
+div.out{
+    transform: rotate(-120deg);
+    animation: AnimOut 0.5s linear;
+}
+
+@keyframes AnimIn {
+    0%{
+        transform: rotate(120deg);
+    }
+    30%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes AnimOut {
+    0%{
+        transform: rotate(10deg);
+    }
+    30%{
+        transform: rotate(-20deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-120deg);
+    }
+}
+
+.hidden{
+    display: none;
+}
+.hide{
+    transform: scale(0);
+    animation: hide 0.5s ease-in
+}
+.show{
+    transform: scale(1);
+    animation: show 0.5s ease-in
+}
+
+@keyframes hide {
+    0%{
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0%{
+        transform: scale(0);
+        opacity: 0.5;
+    }
+    /* 30%{
+        transform: scale(2);
+        opacity: 0.8;
+    } */
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.final.hidden{
+    display: none;
+}
+
+.final.show{
+    transform: scale(1);
+    animation: show 0.4s ease-in;
+}
+
+/* .counter-container{
+    background-color: bisque;
+} */
+
+

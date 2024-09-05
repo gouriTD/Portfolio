@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+body{
+    background-color: lightgray;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container *{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 300px;
+    max-height: 500px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    overflow-y: auto;
+}
+
+.container *{
+    margin: 0;
+}
+
+header{
+    background-color: #6495ED;
+    padding: 20px;
+    color: white;
+}
+
+header #title{
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+}
+
+header #subtitle{
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+header #search{
+    border:0;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+
+header #search:focus{
+    outline: none;
+}
+header #search::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+/*
+* Un-ordered list has margin and padding associated with it.
+*/
+.user-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.user-list li{
+    display: flex;
+    /* margin: 10px 0; */
+    padding: 20px;
+}
+
+.user-list li:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+.user-list li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.user-list .user-info{
+    margin-left: 20px;
+}
+
+.user-list li .user-info h4{
+    font-size: 14px;
+    margin: 0;
+}
+
+.user-list li .user-info small{
+    font-size: 10px;
+    margin: 0;
+}
+
+li.hide{
+    display: none;
+}
+

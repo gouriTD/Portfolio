@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Mulish', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    gap: 10px;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 60px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.6s ease-in;
+    cursor: pointer;
+}
+
+.panel h3{
+    position: absolute;
+    left: 35px;
+    bottom: 10px;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.4s ease-in 0.4s;
+}
+
+.one{
+    background-image: url("./images/desert.avif");
+    
+}
+.two{
+    background-image: url("./images/sunset.avif");
+}
+.three{
+    background-image: url("./images/village.avif");
+}
+.four{
+    background-image: url("./images/waterfall.avif");
+}
+.five{
+    background-image: url("./images/wild-life.avif");
+}

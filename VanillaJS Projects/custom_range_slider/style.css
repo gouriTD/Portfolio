@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: linear-gradient(315deg, cyan 0%, lightcyan 100%); */
+    margin: 0;
+    background-image: url('./images/autumn.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /* background-color: black; */
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    font-family: 'Lato', sans-serif;
+    backdrop-filter: blur(10px);
+}
+
+h2{
+    position: absolute;
+    top: 10px;
+}
+
+.range-container{
+    padding: 10px 20px;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+
+
+input[type = 'range']{
+    -webkit-appearance: none;
+    width: 300px;
+    border-radius: 25px;
+    height: 8px;
+    background-color: blueviolet;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* For styling the runner and thumb on safari and chrome we use the selector --webkit-slider-runnable-track, and --webkit-slider-thumb for styling the track and thumb on mozilla browser we need to use -moz-range-track and -moz-range-thumb  and for internet explorer we need to set the design using -ms-track, -ms-thumb .
+
+If we need to disable the default appearance of the web kit , we need to do -webkit-appearance = none, doing so would disable the default styling of the widget.
+*/
+
+/* input[type = 'range']::-webkit-slider-runnable-track{
+    
+   
+} */
+
+
+input[type = 'range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rebeccapurple;
+    cursor: pointer;
+
+    /*For creating a  triangular slider thumb*/
+    /* border-left: 15px solid transparent; 
+    border-right: 15px solid transparent;    
+    border-bottom: 15px solid green; 
+    box-shadow: 0 0 5px rgba(0,255,0,0.3); */
+  
+}
+
+input[type = 'range'] + label{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: -40px;
+    left: 140px
+}

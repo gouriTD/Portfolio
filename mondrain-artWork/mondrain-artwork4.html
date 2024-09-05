@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtWork4</title>
+    <style>
+         /* 
+        Colors Used----
+        Gap Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E
+        lightgrey
+
+        IMP: We can't change the properties of grid lines.
+        But grid lines are transparent!
+        height: 952px, width: 551px, 
+        container has 9rows and 7columns.
+        */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 30px 200px 110px 50px 70px 30px 0px;
+            grid-template-rows: 50px 60px 100px 150px 50px 100px 100px 60px 4px;
+            gap: 10px;
+            background-color: #232629;
+            height: 752px;
+            width: 551px
+        }
+
+        .item {
+            background-color: #F0F1EC;
+        }
+
+        .box1{
+           grid-row: span 2;
+            background-color: #F9D01E;
+        }
+        .box2{
+           grid-row: span 2;
+            background-color: #E72F24;
+            border-top: 10px solid black
+        }
+        .box3{
+           grid-row: span 2;
+           border-top: 10px solid black
+        }
+        .box4{
+           grid-column: span 3;
+        }
+        .box6 {
+            grid-column: span 3;
+            grid-row: span 2;
+            background-color: #F9D01E;
+        }
+        .box8{
+           grid-row: span 5;
+           background-color: lightgray;
+        }
+        .box9{
+           grid-row: span 2;
+           background-color: #004592;
+        }
+        .box10{
+            grid-row: span 2;
+            background-color: #232629;
+        }
+        .box12{
+            grid-column: span 2;
+        }
+        .box13{
+            grid-row: span 3;
+            background-color: #232629;
+        }
+        .box16{
+            grid-row: span 2;
+            background-color: #E72F24;
+        }
+        .box17{
+            grid-column: span 2;
+            grid-row: span 2;
+            background-color: #E72F24;
+        }
+        .box19{
+            grid-row: span 2;
+        }
+        .box21{
+            grid-column: span 2;
+            background-color: #004592;
+        }
+        .box25{
+            grid-row: span 2;
+            background-color: lightgray;
+        }
+        .box26{
+            grid-column: span 3;
+        }
+        .box27{
+            grid-column: span 2;
+        }
+        .box29{
+            grid-column: span 6;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <!-- Here we will be defining the artwork-->
+
+    <div class="container">
+       <div class="item box1"></div>
+       <div class="item box2"></div>
+       <div class="item box3"></div>
+       <div class="item box4"></div>
+       <div class="item box5"></div>
+       <div class="item box6"></div>
+       <div class="item box7"></div>
+       <div class="item box8"></div>
+       <div class="item box9"></div>
+       <div class="item box10"></div>
+       <div class="item box11"></div>
+       <div class="item box12"></div>
+       <div class="item box13"></div>
+       <div class="item box14"></div>
+       <div class="item box15"></div>
+       <div class="item box16"></div>
+       <div class="item box17"></div>
+       <div class="item box18"></div>
+       <div class="item box19"></div>
+       <div class="item box20"></div>
+       <div class="item box21"></div>
+       <div class="item box22"></div>
+       <div class="item box23"></div>
+       <div class="item box24"></div>
+       <div class="item box25"></div>
+       <div class="item box26"></div>
+       <div class="item box27"></div>
+       <div class="item box28"></div>
+       <div class="item box29"></div>
+    </div>
+</body>
+</html>

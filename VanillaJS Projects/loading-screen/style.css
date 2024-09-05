@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    /* background-color: lightgreen; */
+}
+
+.loading-screen{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** filter property is used to add visual effect to an image, different values can be assigned like blur(0-highervalue)*/
+.bg-image{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100vw + 20px);
+    height:calc(100vh + 20px);
+    margin: 0;
+    background: url('https://images.unsplash.com/photo-1691514565027-ba527be3ec61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60') no-repeat center/cover;
+    z-index: -1;
+    filter: blur(30px);
+}
+
+.loading-text{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}

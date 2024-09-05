@@ -1,0 +1,29 @@
+<!-- Thus through this project we learnt:
+    a) How to make use of different predfined classes to make a card.
+    b) How to apply flex, cross-alignment by items-center and main-alignment by justify-center
+    c) How to specify a custom box shadow by defining it in our tailwind.config.js file.
+    d) Playing around with text-color, size, font-weight etc.
+    e) Similarly for images , setting its bg position and no-repeat option, we can also specify different width and height by setting proper properties. 
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tailwind Card</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="bg-slate-300 h-screen w-screen flex justify-center items-center px-8">
+        <div class="card min-h-52 min-w-52 rounded-lg shadow-3xl overflow-hidden">
+            <div>
+                <!-- This is the image div which will hold the image to its entire length -->
+                <img src="https://images.unsplash.com/photo-1488928741225-2aaf732c96cc?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dHVsaXBzfGVufDB8fDB8fHww" alt="" class="bg-no-repeat bg-center">
+            </div>
+            <div class="px-4 py-3">
+                <!-- This section will hold basic info like content name, author and created date -->
+                <h3 class="text-center text-2xl text-fuchsia-950 font-semibold">Beautiful Tulips</h3>
+                <small class="text-center text-slate-500 my-6">Gouri Tripathi @2024</small>
+            </div>
+        </div>
+    </body>
+</html>

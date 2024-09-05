@@ -1,0 +1,27 @@
+.background{
+    background-image: url('../images/background-image.png');
+    height: 400px;
+    width: 100%;
+}
+
+.buisness-info > li {
+    /*this will style the bullets*/
+    font-size: xx-large;
+    text-align: start;
+   }
+.buisness-info >li p{
+    /*this will style the bullets*/
+    font-size: large;
+   }
+.box-container{
+    width: 250px;
+    height: 250px;
+    background-color: #F7F9FA;
+} 
+.img-height{
+    height: 245px;
+}    
+.linked-p{
+    font-size: 14px;
+    font-weight: 400;
+}

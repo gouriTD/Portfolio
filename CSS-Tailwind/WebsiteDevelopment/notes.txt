@@ -1,0 +1,13 @@
+In case of website development lets follow the following steps :
+
+a) The entire home page is divided into the following sections.
+    1) navbar : create a navbar container and as per the design create the navbar content.
+    2) hero-section : The hero section contains the highlighting features of the website, hence it will contain an image followed be a website describing text.
+    3) product section : Then we can have a gallery of different products offered.
+    4) Testimonials: Then we can have testimonials of different users.
+    5) key highlights: Any key highlighting events, like recommendation, awards, recognition etc.
+    5) Footer: 
+        a) Company logo.
+        b) Links for further re-direction.
+        c) Contact us.
+        d) copyright statement.

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artwork5</title>
+    <style>
+        /* 
+        Colors Used---
+        Gap Colour: #000
+        White: #F0F1EC
+        Red: #E72F24
+        Black: #232629
+        Blue: #004592
+        Yellow: #F9D01E
+
+        IMP: We can't change the properties of grid lines.
+        But grid lines are transparent!
+        height: 940, width: 590, gap: 10px, rows: 14, column: 10
+        */
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 50px);
+            grid-template-rows: 75px 30px repeat(3, 50px) repeat(4, 75px) repeat(3, 50px) 30px 75px;
+            gap: 5px;
+            background-color: black;
+            padding: 9px;
+        }
+        .item {
+            background-color: #F0F1EC;
+        }
+        .box1{
+            grid-row: span 3;
+        }
+        .box2{
+            grid-column: span 3;
+            background-color: #F9D01E;
+        }
+        .box3{
+            grid-column: span 3;
+        }
+        .box4{
+            grid-column: span 2;
+        }
+        .box5{
+            grid-row: span 2;
+        }
+        .box6{
+            grid-area: 2/2/4/4;
+        }
+        .box7{
+            grid-area: 2/4/4/6;
+            background-color: #232629;
+        }
+        .box8{
+            grid-area: 2/6/6/10;
+            background-color: #E72F24;
+        }
+        .box9{
+            grid-row: span 3;
+        }
+        .box10{
+            grid-column: span 2;
+            background-color: #F9D01E;
+        }
+        .box11{
+            grid-row: span 2;
+            background-color: #232629;;
+        }
+        .box12{
+            grid-row: span 2;
+        }
+        .box13{
+            grid-row: span 2;
+        }
+       
+        .box14{
+            grid-column: span 2;
+        }
+         .box15{
+            grid-area: 6/1/8/3;
+            background-color: #E72F24;
+        }
+        .box16{
+            grid-area: 6/3/8/5;
+            background-color:#004592;
+        }
+        .box17{
+            grid-row: span 2;
+        }
+        .box18{
+            grid-column: span 2;
+        }
+        .box19{
+            grid-area: 6/8/8/10;
+            background-color: #F9D01E;
+        }
+        .box20{
+            grid-row: span 2;
+            background-color: #F9D01E;
+        }
+        .box21{
+            grid-column: span 2;
+        }
+        .box22{
+            grid-row: span 2;
+            background-color: #F9D01E;
+        }
+        .box23{
+            grid-area: 8/2/10/4;
+            background-color: #F9D01E;
+        }
+        .box24{
+            grid-column: span 2;
+        }
+        .box25{
+            grid-row: span 2;
+        }
+        .box26{
+            grid-area: 8/7/10/9;
+            background-color: #E72F24;
+        }
+        .box27{
+            grid-area: 8/9/10/11;
+            background-color: #004592;
+        }
+        .box28{
+            grid-column: span 2;
+        }
+        .box29{
+            grid-row: span 3;
+        }
+        .box30{
+            grid-area: 10/2/14/6;
+            background-color: #004592;
+        }
+        .box31{
+            grid-row: span 2;
+        }
+        .box32{
+            grid-row: span 2;
+        }
+        .box33{
+            grid-row: span 2;
+            background-color: #232629;
+        }
+        .box34{
+            grid-row: span 2;
+            background-color: #F9D01E;
+        }
+        .box35{
+            background-color: #F9D01E;
+        }
+        .box36{
+            background-color: #232629;
+        }
+        .box37{
+            grid-area: 12/6/14/8;
+            background-color: #232629;
+        }
+        .box38{
+            grid-area: 12/8/14/10;
+        }
+        .box39{
+            grid-row: span 3;
+        }
+        .box40{
+            grid-row: span 2;
+        }
+        .box41{
+            grid-column: span 2;
+        }
+        .box42{
+            grid-column: span 3;
+        }
+        .box43{
+            grid-column: span 3;
+            background-color: #F9D01E;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item box1"></div>
+        <div class="item box2"></div>
+        <div class="item box3"></div>
+        <div class="item box4"></div>
+        <div class="item box5"></div>
+        <div class="item box6"></div>
+        <div class="item box7"></div>
+        <div class="item box8"></div>
+        <div class="item box9"></div>
+        <div class="item box10"></div>
+        <div class="item box11"></div>
+        <div class="item box12"></div>
+        <div class="item box13"></div>
+        <div class="item box14"></div>
+        <div class="item box15"></div>
+        <div class="item box16"></div>
+        <div class="item box17"></div>
+        <div class="item box18"></div>
+        <div class="item box19"></div>
+        <div class="item box20"></div>
+        <div class="item box21"></div>
+        <div class="item box22"></div>
+        <div class="item box23"></div>
+        <div class="item box24"></div>
+        <div class="item box25"></div>
+        <div class="item box26"></div>
+        <div class="item box27"></div>
+        <div class="item box28"></div>
+        <div class="item box29"></div>
+        <div class="item box30"></div>
+        <div class="item box31"></div>
+        <div class="item box32"></div>
+        <div class="item box33"></div>
+        <div class="item box34"></div>
+        <div class="item box35"></div>
+        <div class="item box36"></div>
+        <div class="item box37"></div>
+        <div class="item box38"></div>
+        <div class="item box39"></div>
+        <div class="item box40"></div>
+        <div class="item box41"></div>
+        <div class="item box42"></div>
+        <div class="item box43"></div>
+
+        
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: lightgreen; */
+    /* background-image: url('https://media1.giphy.com/media/TdfyKrN7HGTIY/200w.webp?cid=ecf05e471gz8ywu1speydv5dt1cmakcer95byy4ebmunkj0w&ep=v1_gifs_search&rid=200w.webp&ct=g');
+    background-position: center;
+    background-size: 500px 500px;
+    background-repeat: no-repeat; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.boxContainer{
+    position: absolute;
+    top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    justify-content: space-around;
+    transition: 0.4s ease;
+}
+
+.box{
+    width: 125px;
+    height: 125px;
+    background-color: lightgrey;
+    background-image: url('https://media1.giphy.com/media/TdfyKrN7HGTIY/200w.webp?cid=ecf05e471gz8ywu1speydv5dt1cmakcer95byy4ebmunkj0w&ep=v1_gifs_search&rid=200w.webp&ct=g');
+    background-position: center;
+    background-size: 500px 500px; 
+    background-repeat: no-repeat;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.box::after{
+    content: '';
+    background-color: lightcoral;
+    position: absolute;
+    top: 8px;
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    transform: skewY(45deg);
+}
+
+.box::before{
+    content: '';
+    background-color: coral;
+    position: absolute;
+    left: 8px;
+    bottom: -15px;
+    height: 15px;
+    width: 100%;
+    transform: skewX(45deg);
+}
+
+
+
+.boxContainer.big{
+    width: 600px;
+    height: 600px;
+}
+
+.magic{
+    padding: 20px 40px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: coral;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.magic:active{
+    transform: scale(0.95);
+}
+
+.boxContainer.big .box{
+    transform: rotateZ(360deg);
+}

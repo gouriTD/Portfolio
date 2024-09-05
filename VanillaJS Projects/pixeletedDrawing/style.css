@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+body{
+    background-color: #444;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    /* height: 800px; */
+    align-content: center;
+}
+
+.square{
+    width: 16px;
+    height: 16px;
+    background-color: #777;
+    margin: 2px;
+    transition: 2s ease;
+    box-shadow: 0 2px 5px rgba(#777,0.2);
+}
+
+.square:hover{
+    transition-duration: 0s;
+}
+
+.color-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+
+#red{
+    background-color: red;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#pink{
+    background-color: pink;
+}
+
+#green{
+    background-color: yellowgreen;
+}
+#yellow{
+    background-color: yellow;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#purple{
+    background-color: purple;
+}

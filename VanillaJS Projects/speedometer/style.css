@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+body{
+    background-color: lightblue;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: 250px 250px 0 0;
+    background-color: #333;
+    background-image: radial-gradient( circle at bottom center, black 65px, #5555 , transparent 65px), conic-gradient( from -90deg at 50% 100%, #39ab5e 0deg 36deg, #9ca92e 36deg 72deg, #eec22a 72deg 108deg, #e07b27 108deg 144deg, #e2443c 144deg);
+    /* background-image: conic-gradient(red 0deg, red 20deg, yellow 20deg, yellow 60deg, green 60deg, green 90deg, blue 270deg); */
+}
+
+.pointer{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.needle{
+    width: 4px;
+    height: 150px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -100%) rotate(0deg);
+    border-radius: 50%;
+    transform-origin: bottom center;
+    transition: transform 0.5s ease;
+}
+
+.needle::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+button{
+    margin-top: 50px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:active{
+   transform: scale(0.95);
+   
+}
+

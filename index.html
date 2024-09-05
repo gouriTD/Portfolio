@@ -1,0 +1,88 @@
+<!--This is my profile project , which is a website telling my areas of interest and work written
+all in plain html and css
+Content:
+
+1) Hero section , which tells who i am .
+2) Resume for my work ex.
+3) My recent develoment skills.
+4) My past development skills.
+5) My hobbies.
+6) Contact.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gouri's Profile</title>
+   <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+
+<body>
+   <div class="background hero body-text">
+      <div>
+         <h1>Hello There !!! I am Gouri Tripathi.</h1>
+         <h3>I am a knowledge seeker by choice and a developer by profession</h3>
+         <p>Here's <span><a href="./resume.html" style="color: #F4D160;">my Resume</a></span> for professional details.</p>
+         </h4>
+      </div>
+      <div>
+         <img src="./assets/images/girl-vector.png" alt="image" width="200px" height="200px"
+            style="border-radius: 50%;">
+      </div>
+
+
+   </div>
+   <br>
+   <div class="jumbotron body-text ">
+      <div>
+         <h4>My Current Skill sets</h4>
+         <ul>
+            <li>Web development -> view <a href="./workdone.html" style="color: blue;" >MyPortfolio</a></li>
+            <li>React native (mobile development) with Node.js (backend developmnet)</li>
+         </ul>
+         <h4>My Past Skill sets</h4>
+         <ul>
+            <li>Flutter cross platform develoment</li>
+            <li>Android develoment</li>
+            <li>Objective-c and ios development</li>
+            <li>Qt-qml and Symbian c++ development</li>
+         </ul>
+      </div>
+   </div>
+   <br>
+   <div class="interest-container">
+      <h4>My Hobbies and interests</h4>
+      <div class="interests">
+         <div class="grid-box box1">Playing Violin <img src="./assets/images/violin-hd.jpeg" alt="violin" /></div>
+         <div class="grid-box box2">Reading <img src="./assets/images/reading.jpeg" alt="reading"></div>
+         <div class="grid-box box3">Drawing and painting <img src="./assets/images/drawing.jpeg" alt="art"></div>
+         <div class="grid-box box4">Travelling <img src="./assets/images/traveeling.jpeg" alt="travelling"></div>
+         <div class="grid-box box5">Watching movies and documentries <img src="./assets/images/movie-watching.jpeg"
+               alt=""></div>
+
+      </div>
+   </div>
+   <br>
+   <div class="contact body-text">
+      <div class="contact-internal-container">
+         <h3>Hey there if any one shares my common interest or looking for similar profiles for new job positions</h4>
+         <h4>Lets connect at :</h4>
+         <p>email: gouri30@gmail.com</p>
+      </div>
+   </div>
+   <div class="footer body-text">
+      <p id="copyright">copyright Gouri Tripathi, </p>
+   </div>
+
+   <script>
+      const copyright = document.getElementById('copyright')
+      const date = new Date()
+      const presentYear = date.getFullYear()
+      copyright.innerText += ' '+ presentYear
+   </script>
+
+</body>
+</html>

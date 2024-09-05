@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <button class="menuBtn"><i class="fas fa-bars"></i></button>
+        <div class="menu-container hide">
+            <div class="panel" id="one"></div>
+            <div class="panel" id="two"></div>
+            <div class="panel" id="three">
+                <button id="close"><div class="i fas fa-x"></div></button>
+                <ul class="hide">
+                    <li><a href='#'>Home</a></li>
+                    <li><a href="#">show opacity reducer</a></li>
+                    <li><a href="#">start quiz</a></li>
+                    <li><a href="#">Re start</a></li>
+                    <li><small>dummy sliding drawer menu!!!</small></li>
+                </ul>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="quiz-card">
+        <div class="quiz-container">
+            <h3 id="title"> Question Text </h3>
+            <ul>
+                <li>
+                    <input type="radio" class="answer" id="a" name="answer">
+                    <label for="a" id="a">answer a</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="b" name="answer">
+                    <label for="b" id="b">answer b</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="c" name="answer">
+                    <label for="c" id="c">answer c</label>
+                </li>
+                <li>
+                    <input type="radio" class="answer" id="d" name="answer">
+                    <label for="d" id="d">answer d</label>
+                </li>
+            </ul>
+        </div>
+
+        <button class="btn" id="submit">Submit</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

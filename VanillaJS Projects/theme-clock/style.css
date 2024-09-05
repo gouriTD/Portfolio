@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lato&family=Libre+Baskerville&family=Lobster&family=Mulish:wght@400;700&family=Poppins&family=Roboto:wght@400;500&family=Russo+One&display=swap');
+:root{
+    
+    --secondary-color: #3e3e3e;
+    --primary-color: #ffffff;
+
+}
+
+html.dark{
+
+    --primary-color: #3e3e3e;
+    --secondary-color: #ffffff;
+} 
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto','sans-serif';
+    margin: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.6s ease;
+}
+
+.container{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock-container{
+    text-align: center;
+    font-family: inherit;
+}
+.clock{
+    /* background-color: lightgray; */
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* .needle{
+    width: 3px;
+    height: 70px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transform-origin: bottom center;
+} */
+
+.needle.hour{
+    width: 3px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transform-origin: bottom center;
+}
+
+.needle.minute{
+    width: 3px;
+    height: 90px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transform-origin: bottom center;
+}
+
+.needle.second{
+    width: 3px;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    transform-origin: bottom center;
+}
+
+.pointer{
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.pointer::after{
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.time{
+    font-size: 3rem
+}
+.date span{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+.date{
+    text-transform: uppercase;
+}
+
